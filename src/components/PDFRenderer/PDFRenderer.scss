@@ -1,0 +1,44 @@
+.pdf {
+  display: inline-block;
+  width: calc(100% - 384px);
+  height: auto;
+  padding: 60px 84px;
+  vertical-align: top;
+  max-height: 100vh;
+  overflow: auto;
+
+  @media (max-width: 1120px) {
+    width: 100%;
+  }
+
+  @media (max-width: 780px) {
+    padding: 60px 42px;
+  }
+
+  &-heading {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #2d1f3f;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1120px) {
+      justify-content: center;
+    }
+
+    @media (max-width: 780px) {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+    img {
+      height: 41px;
+      width: 34px;
+      margin-right: 28px;
+      margin-bottom: auto;
+      margin-top: 8px;
+    }
+  }
+}
